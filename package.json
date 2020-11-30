@@ -17,6 +17,9 @@
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",
-    "start:dev": "sirv public --dev"
+    "start:dev": "sirv public --dev",
+    "init": "ntl init",
+    "deploy": "ntl deploy --prod",
+    "build-deploy": "rollup -c && ntl deploy --prod"
   }
 }
